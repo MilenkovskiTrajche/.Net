@@ -1,0 +1,31 @@
+﻿@page
+@model HotelManagement.Pages.Account.RegisterModel
+<h2>Register</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Input.Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>LastName</label>
+        <input asp-for="Input.LastName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Input.Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>City</label>
+        <input asp-for="Input.City" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Password</label>
+        <input asp-for="Input.Password" type="password" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Confirm Password</label>
+        <input asp-for="Input.ConfirmPassword" type="password" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

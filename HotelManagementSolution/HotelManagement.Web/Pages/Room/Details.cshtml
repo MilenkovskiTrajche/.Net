@@ -1,0 +1,69 @@
+﻿@page
+@model HotelManagement.Web.Pages.Room.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Room</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Room.PricePerNight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Room.PricePerNight)
+        </dd>
+        <dd class="col-sm-10">
+            @if (Model.Room.Images != null && Model.Room.Images.Count > 0)
+            {
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        @for (int i = 0; i < Model.Room.Images.Count; i++)
+                        {
+                            var img = Model.Room.Images[i];
+                            <div class="carousel-item @(i == 0 ? "active" : "")">
+                                <img src="@Url.Content(img.Url)" class="d-block w-100" alt="Room image">
+                            </div>
+                        }
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            }
+            else
+            {
+                <p>No images available.</p>
+            }
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Room.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

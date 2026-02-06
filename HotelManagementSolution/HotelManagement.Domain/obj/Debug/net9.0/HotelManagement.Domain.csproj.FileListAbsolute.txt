@@ -1,0 +1,12 @@
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\bin\Debug\net9.0\HotelManagement.Domain.deps.json
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\bin\Debug\net9.0\HotelManagement.Domain.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\bin\Debug\net9.0\HotelManagement.Domain.pdb
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.AssemblyInfo.cs
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.sourcelink.json
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\refint\HotelManagement.Domain.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\HotelManagement.Domain.pdb
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Domain\obj\Debug\net9.0\ref\HotelManagement.Domain.dll

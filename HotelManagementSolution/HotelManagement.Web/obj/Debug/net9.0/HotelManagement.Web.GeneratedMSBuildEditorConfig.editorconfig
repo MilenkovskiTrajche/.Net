@@ -1,0 +1,189 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HotelManagement.Web
+build_property.RootNamespace = HotelManagement.Web
+build_property.ProjectDir = C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Web
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Admin/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Hotel/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Hotel/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Hotel/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Hotel/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Hotel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG90ZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/ReservationAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25BZG1pblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/ReservationAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25BZG1pblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/ReservationAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25BZG1pblxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/ReservationAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25BZG1pblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/ReservationAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25BZG1pblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Reservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Reviews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Reviews/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Reviews/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Reviews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Reviews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV2aWV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/RoomView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Room/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Room/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Room/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Room/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Room/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9vbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/trajce/finki/VEZBI/FINKI/ISPROEKT/HotelManagementSolution/HotelManagement.Web/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-88oi2aly55

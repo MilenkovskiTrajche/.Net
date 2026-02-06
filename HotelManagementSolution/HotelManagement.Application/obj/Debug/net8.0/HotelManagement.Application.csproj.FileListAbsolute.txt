@@ -1,0 +1,16 @@
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\bin\Debug\net8.0\HotelManagement.Application.deps.json
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\bin\Debug\net8.0\HotelManagement.Application.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\bin\Debug\net8.0\HotelManagement.Application.pdb
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\bin\Debug\net8.0\HotelManagement.Domain.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\bin\Debug\net8.0\HotelManagement.Domain.pdb
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.csproj.AssemblyReference.cache
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.AssemblyInfoInputs.cache
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.AssemblyInfo.cs
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.sourcelink.json
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelMan.6B58BC18.Up2Date
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\refint\HotelManagement.Application.dll
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\HotelManagement.Application.pdb
+C:\Users\milen\Documents\trajce\finki\VEZBI\FINKI\ISPROEKT\HotelManagementSolution\HotelManagement.Application\obj\Debug\net8.0\ref\HotelManagement.Application.dll

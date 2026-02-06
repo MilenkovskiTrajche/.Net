@@ -1,0 +1,330 @@
+﻿@page
+@model HotelManagement.Web.Pages.Reservation.IndexModel
+@using System
+@using System.Linq
+
+@{
+    var pastReservations = Model.Reservations
+        .Where(r => !r.IsCanceled && r.ToDate < DateTime.UtcNow)
+        .OrderByDescending(r => r.ToDate)
+        .ToList();
+
+    var upcomingReservations = Model.Reservations
+        .Where(r => !r.IsCanceled && r.ToDate >= DateTime.UtcNow)
+        .OrderBy(r => r.FromDate)
+        .ToList();
+
+    var canceledReservations = Model.Reservations
+        .Where(r => r.IsCanceled)
+        .OrderByDescending(r => r.FromDate)
+        .ToList();
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="tempAlert">
+        @TempData["Success"]
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" id="tempAlert">
+        @TempData["Error"]
+    </div>
+}
+
+<h3 class="mt-4">Past Reservations</h3>
+
+@if (!pastReservations.Any())
+{
+    <p>No past reservations.</p>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var r in pastReservations)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5>@Model.RoomNames.GetValueOrDefault(r.Id)</h5>
+                        <p>
+                            @for (int i = 0; i < r.Adults+r.Children; i++)
+                            {
+                                <i class="fa-solid fa-user text-primary"></i>
+                            }
+                        </p>
+                        <p>
+                            @r.FromDate.ToLocalTime().ToShortDateString()
+                            -
+                            @r.ToDate.ToLocalTime().ToShortDateString()
+                        </p>
+
+                        @if (r.AdditionalServices != null && r.AdditionalServices.Any())
+                        {
+                            <div class="d-flex align-items-center gap-2 flex-wrap">
+                                <span>Additional services:</span>
+
+                                @foreach (var s in r.AdditionalServices)
+                                {
+                                    <span class="badge bg-secondary">
+                                        @switch (s)
+                                        {
+                                            case Domain.Enums.AdditionalService.Breakfast:
+                                                @:🍳 Breakfast
+                                                break;
+                                            case Domain.Enums.AdditionalService.Lunch:
+                                                @:🥪 Lunch
+                                                break;
+                                            case Domain.Enums.AdditionalService.Dinner:
+                                                @:🍽️ Dinner
+                                                break;
+                                        }
+                                    </span>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p>Additional services: <em>None</em></p>
+                        }
+
+                        <p class="fw-bold">Price: @r.Price</p>
+
+                        @if (Model.HasReview.GetValueOrDefault(r.Id))
+                        {
+                            <p class="fw-bold">
+                                Rating: @Model.ReviewRatings.GetValueOrDefault(r.Id) / 5
+                            </p>
+
+                            <p>
+                                Description: "@Model.ReviewDescription.GetValueOrDefault(r.Id)"
+                            </p>
+
+                            <div class="d-flex gap-2">
+                                <a asp-page="/RoomView"
+                                   asp-route-id="@r.RoomId"
+                                   asp-route-editReviewId="@r.Id"
+                                   class="btn btn-warning btn-sm">
+                                    Update Review
+                                </a>
+                                <form method="post"
+                                      asp-page-handler="DeleteReview"
+                                      asp-route-reservationId="@r.Id">
+                                    <button class="btn btn-outline-danger btn-sm">
+                                        🗑 Delete
+                                    </button>
+                                </form>
+                            </div>
+                        }
+                        else
+                        {
+                            <a asp-page="/RoomView"
+                               asp-route-id="@r.RoomId"
+                               asp-route-showReviewForm="true"
+                               asp-route-IsEdit="true"
+                               class="btn btn-warning btn-sm">
+                                Leave Review
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<h3 class="mt-5">Upcoming Reservations</h3>
+
+@if (!upcomingReservations.Any())
+{
+    <p>No upcoming reservations.</p>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var r in upcomingReservations)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        @if (Model.WeatherPerReservation.TryGetValue(r.Id, out var forecast) && forecast.Any())
+                        {
+                            <div class="mb-3 fw-bold">
+                                <span>Forecast:</span>
+                                @* Chunk into rows of 7 days max *@
+                                @foreach (var chunk in forecast.Chunk(7))
+                                {
+                                    <div class="mb-1">
+                                        @for (int i = 0; i < chunk.Count(); i++)
+                                        {
+                                            var day = chunk[i];
+                                            <span class="me-2" style="font-size:1.2rem;">
+                                                @($"{day.Temperature:0}°{day.Emoji}")
+                                            </span>
+                                            @if (i < chunk.Count() - 1)
+                                            {
+                                                <span>|</span>
+                                            }
+                                        }
+                                    </div>
+                                }
+
+                                @* Show note if reservation exceeds available forecast *@
+                                @{
+                                    var totalDays = (r.ToDate - r.FromDate).Days + 1;
+                                    if (forecast.Count < totalDays)
+                                    {
+                                        <div class="text-muted small">
+                                            Forecast available only for next @forecast.Count days (API limit).
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        }
+
+                        <h5>@Model.RoomNames.GetValueOrDefault(r.Id)</h5>
+
+                        <p>
+                            @for (int i = 0; i < r.Adults + r.Children; i++)
+                            {
+                                <i class="fa-solid fa-user text-primary"></i>
+                            }
+                        </p>
+
+                        <p>
+                            @r.FromDate.ToLocalTime().ToShortDateString() - @r.ToDate.ToLocalTime().ToShortDateString()
+                        </p>
+
+                        @if (r.AdditionalServices != null && r.AdditionalServices.Any())
+                        {
+                            <div class="d-flex align-items-center gap-2 flex-wrap">
+                                <span>Additional services:</span>
+
+                                @foreach (var s in r.AdditionalServices)
+                                {
+                                    <span class="badge bg-secondary">
+                                        @switch (s)
+                                        {
+                                            case Domain.Enums.AdditionalService.Breakfast:
+                                                @:🍳 Breakfast
+                                                break;
+                                            case Domain.Enums.AdditionalService.Lunch:
+                                                @:🥪 Lunch
+                                                break;
+                                            case Domain.Enums.AdditionalService.Dinner:
+                                                @:🍽️ Dinner
+                                                break;
+                                        }
+                                    </span>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p>Additional services: <em>None</em></p>
+                        }
+
+                        <p class="fw-bold">Price: @r.Price</p>
+
+                        <div class="d-flex gap-2">
+                            <a asp-page="/RoomView"
+                               asp-route-id="@r.RoomId"
+                               asp-route-IsEdit="true"
+                               class="btn btn-outline-primary btn-sm">
+                                🔁 Change
+                            </a>
+
+                            <form method="post"
+                                  asp-page-handler="Cancel"
+                                  asp-route-id="@r.Id">
+                                <button class="btn btn-danger btn-sm">
+                                    Cancel
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<h3 class="mt-5 text-muted">Canceled Reservations</h3>
+
+@if (!canceledReservations.Any())
+{
+    <p>No canceled reservations.</p>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var r in canceledReservations)
+        {
+            <div class="col">
+                <div class="card h-100 border-secondary">
+                    <div class="card-body text-muted">
+                        <h5>@Model.RoomNames.GetValueOrDefault(r.Id)</h5>
+                        <p>
+                            @for (int i = 0; i < r.Adults + r.Children; i++)
+                            {
+                                <i class="fa-solid fa-user text-primary"></i>
+                            }
+                        </p>
+                        <p>
+                            @r.FromDate.ToLocalTime().ToShortDateString()
+                            -
+                            @r.ToDate.ToLocalTime().ToShortDateString()
+                        </p>
+
+                        @if (r.AdditionalServices != null && r.AdditionalServices.Any())
+                        {
+                            <div class="d-flex align-items-center gap-2 flex-wrap">
+                                <span>Additional services:</span>
+
+                                @foreach (var s in r.AdditionalServices)
+                                {
+                                    <span class="badge bg-secondary">
+                                        @switch (s)
+                                        {
+                                            case Domain.Enums.AdditionalService.Breakfast:
+                                                @:🍳 Breakfast
+                                                break;
+                                            case Domain.Enums.AdditionalService.Lunch:
+                                                @:🥪 Lunch
+                                                break;
+                                            case Domain.Enums.AdditionalService.Dinner:
+                                                @:🍽️ Dinner
+                                                break;
+                                        }
+                                    </span>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p>Additional services: <em>None</em></p>
+                        }
+
+                        <p class="fw-bold">Price: @r.Price</p>
+
+                        <span class="badge bg-secondary">Canceled</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+<script>
+    // Wait 2.5 seconds and then hide the alert
+    setTimeout(() => {
+        const alert = document.getElementById('tempAlert');
+        if (alert) {
+            alert.classList.remove('show');
+            alert.classList.add('fade');
+            // Optional: remove from DOM after fade out
+            setTimeout(() => alert.remove(), 500);
+        }
+    }, 2500); // 2500ms = 2.5 seconds
+</script>

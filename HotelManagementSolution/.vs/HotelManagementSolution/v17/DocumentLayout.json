@@ -1,0 +1,253 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\pages\\roomview.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\pages\\roomview.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\pages\\roomview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\pages\\roomview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\pages\\room\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\pages\\room\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\pages\\room\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\pages\\room\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|solutionrelative:hotelmanagement.domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|solutionrelative:hotelmanagement.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|solutionrelative:hotelmanagement.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|solutionrelative:hotelmanagement.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.web\\hotelmanagement.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B9216DB2-3369-4B96-B3FE-8F739A1DCC21}|HotelManagement.Web\\HotelManagement.Web.csproj|solutionrelative:hotelmanagement.web\\hotelmanagement.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC3C768-1EB9-48A5-B282-8520F0774C60}|HotelManagement.Infrastructure\\HotelManagement.Infrastructure.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.infrastructure\\hotelmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DEC3C768-1EB9-48A5-B282-8520F0774C60}|HotelManagement.Infrastructure\\HotelManagement.Infrastructure.csproj|solutionrelative:hotelmanagement.infrastructure\\hotelmanagement.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.domain\\hotelmanagement.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6C1CCF02-CCF7-443C-9AFA-1E56D26BA9AC}|HotelManagement.Domain\\HotelManagement.Domain.csproj|solutionrelative:hotelmanagement.domain\\hotelmanagement.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F85EF6-8F38-4660-B816-AAD3D59CAC22}|HotelManagement.Application\\HotelManagement.Application.csproj|c:\\users\\milen\\documents\\trajce\\finki\\vezbi\\finki\\isproekt\\hotelmanagementsolution\\hotelmanagement.application\\hotelmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F3F85EF6-8F38-4660-B816-AAD3D59CAC22}|HotelManagement.Application\\HotelManagement.Application.csproj|solutionrelative:hotelmanagement.application\\hotelmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\Index.cshtml",
+              "RelativeToolTip": "HotelManagement.Web\\Pages\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T01:01:41.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomView.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\RoomView.cshtml.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\Pages\\RoomView.cshtml.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\RoomView.cshtml.cs",
+              "RelativeToolTip": "HotelManagement.Web\\Pages\\RoomView.cshtml.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwBEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T00:58:30.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Program.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Program.cs",
+              "RelativeToolTip": "HotelManagement.Web\\Program.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAcwGwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T00:50:43.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\Room\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\Pages\\Room\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\Room\\Create.cshtml.cs",
+              "RelativeToolTip": "HotelManagement.Web\\Pages\\Room\\Create.cshtml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAIAwwCoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T00:37:54.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\Room\\Create.cshtml",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\Pages\\Room\\Create.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\Room\\Create.cshtml",
+              "RelativeToolTip": "HotelManagement.Web\\Pages\\Room\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T00:37:52.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomView.cshtml",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\RoomView.cshtml",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\Pages\\RoomView.cshtml",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\Pages\\RoomView.cshtml",
+              "RelativeToolTip": "HotelManagement.Web\\Pages\\RoomView.cshtml",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAMwBsBAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T00:37:25.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Domain\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Room.cs",
+              "RelativeToolTip": "HotelManagement.Domain\\Entities\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T23:45:01.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Domain\\Entities\\Review.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Review.cs",
+              "RelativeToolTip": "HotelManagement.Domain\\Entities\\Review.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T23:44:33.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Reservation.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Domain\\Entities\\Reservation.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Reservation.cs",
+              "RelativeToolTip": "HotelManagement.Domain\\Entities\\Reservation.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T23:43:36.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "HotelManagement.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T23:42:42.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HotelManagement.Web.csproj",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\HotelManagement.Web.csproj",
+              "RelativeDocumentMoniker": "HotelManagement.Web\\HotelManagement.Web.csproj",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Web\\HotelManagement.Web.csproj",
+              "RelativeToolTip": "HotelManagement.Web\\HotelManagement.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:13:59.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HotelManagement.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Infrastructure\\HotelManagement.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "HotelManagement.Infrastructure\\HotelManagement.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Infrastructure\\HotelManagement.Infrastructure.csproj",
+              "RelativeToolTip": "HotelManagement.Infrastructure\\HotelManagement.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:13:53.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HotelManagement.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\HotelManagement.Domain.csproj",
+              "RelativeDocumentMoniker": "HotelManagement.Domain\\HotelManagement.Domain.csproj",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Domain\\HotelManagement.Domain.csproj",
+              "RelativeToolTip": "HotelManagement.Domain\\HotelManagement.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:13:50.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HotelManagement.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Application\\HotelManagement.Application.csproj",
+              "RelativeDocumentMoniker": "HotelManagement.Application\\HotelManagement.Application.csproj",
+              "ToolTip": "C:\\Users\\milen\\Documents\\trajce\\finki\\VEZBI\\FINKI\\ISPROEKT\\HotelManagementSolution\\HotelManagement.Application\\HotelManagement.Application.csproj",
+              "RelativeToolTip": "HotelManagement.Application\\HotelManagement.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-27T22:12:13.786Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

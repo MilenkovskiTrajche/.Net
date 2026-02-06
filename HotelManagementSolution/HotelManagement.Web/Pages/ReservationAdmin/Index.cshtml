@@ -1,0 +1,84 @@
+﻿@page
+@model HotelManagement.Web.Pages.ReservationAdmin.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].Customer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].RoomId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].FromDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].ToDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].Adults)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].Children)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].AdditionalServices)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Reservation[0].IsCanceled)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Reservation) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customer.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adults)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Children)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdditionalServices)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsCanceled)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

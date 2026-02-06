@@ -1,0 +1,78 @@
+﻿@page
+@model HotelManagement.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Full-width hotel image -->
+@if (Model.Hotel?.ImageUrl != null)
+{
+    <div class="mb-4">
+        <img src="@Model.Hotel.ImageUrl" class="img-fluid w-100 rounded" style="object-fit: cover; height: 400px;" />
+    </div>
+}
+
+<!-- Hotel description -->
+@if (!string.IsNullOrEmpty(Model.Hotel?.Description))
+{
+    <p class="lead">@Model.Hotel.Description</p>
+}
+
+<!-- Search form -->
+<form method="get" class="row g-2 mb-4" action="#rooms-section">
+    <div class="col-md-6">
+        <input type="text" name="searchName" class="form-control" placeholder="Name" />
+    </div>
+    <div class="col-md-4">
+        <select name="roomType" class="form-select">
+            <option value="">All types</option>
+            @foreach (var type in Enum.GetValues(typeof(HotelManagement.Domain.Enums.RoomType)))
+            {
+                <option value="@type">@type</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary w-100">Search</button>
+    </div>
+</form>
+
+<!-- Room cards -->
+<div id="rooms-section" class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var room in Model.Rooms)
+    {
+        <div class="col">
+            <div class="card h-100">
+                @if (room.Images != null && room.Images.Any())
+                {
+                    <img src="@room.Images.First().Url" class="card-img-top" style="height: 200px; object-fit: cover;" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@room.Name</h5>
+                    <p>
+                        <i class="fa-solid fa-user"></i> @room.Capacity
+                        &nbsp;|&nbsp;
+                        <i class="fa-solid fa-bed"></i> @room.Type
+                    </p>
+                    <p class="card-text">@room.Description</p>
+                    <p class="card-text fw-bold">Price: @room.PricePerNight</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-page="/RoomView" asp-route-id="@room.Id" class="btn btn-primary w-100">View</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.location.hash === "#rooms-section") {
+                const el = document.getElementById("rooms-section");
+                if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        });
+    </script>
+}

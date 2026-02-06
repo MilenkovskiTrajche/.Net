@@ -1,0 +1,38 @@
+﻿@page
+@model HotelManagement.Web.Pages.Customer.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>City</th>
+            <th>Type</th>
+            <th>Reservation Count</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Customers) {
+        <tr>
+                <td>@item.Username</td>
+                <td>@item.City</td>
+                <td>@item.Type</td>
+                <td>@item.ReservationCount</td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

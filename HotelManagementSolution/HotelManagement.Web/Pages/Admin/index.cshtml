@@ -1,0 +1,60 @@
+﻿@page
+@model HotelManagement.Web.Pages.Admin.indexModel
+@{
+}
+
+<h2 class="mb-4">Admin Dashboard</h2>
+
+<div class="row g-4">
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Hotels</h5>
+                <p class="card-text">Manage hotels and details</p>
+                <a asp-page="/Hotel/Index" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Rooms</h5>
+                <p class="card-text">Rooms & amenities</p>
+                <a asp-page="/Room/Index" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Customers</h5>
+                <p class="card-text">Registered users</p>
+                <a asp-page="/Customer/Index" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Reservations</h5>
+                <p class="card-text">All bookings</p>
+                <a asp-page="/ReservationAdmin/Index" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+                <h5 class="card-title">Reviews</h5>
+                <p class="card-text">Customer feedback</p>
+                <a asp-page="/Reviews/Index" class="btn btn-primary">Manage</a>
+            </div>
+        </div>
+    </div>
+
+</div>

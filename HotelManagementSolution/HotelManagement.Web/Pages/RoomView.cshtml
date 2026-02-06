@@ -1,0 +1,412 @@
+﻿@page
+@using HotelManagement.Domain.Enums
+@model HotelManagement.Web.Pages.RoomViewModel
+
+@{
+    var amenityIcons = new Dictionary<RoomAmenities, string>
+    {
+        { RoomAmenities.WiFi, "fa-wifi" },
+        { RoomAmenities.AirConditioning, "fa-snowflake" },
+        { RoomAmenities.TV, "fa-tv" },
+        { RoomAmenities.MiniBar, "fa-wine-glass" },
+        { RoomAmenities.Safe, "fa-lock" },
+        { RoomAmenities.Balcony, "fa-building" },
+        { RoomAmenities.TheVardarPool, "fa-water" },
+        { RoomAmenities.VodnoView, "fa-mountain" },
+        { RoomAmenities.SoundProofRooms, "fa-sound" }
+    };
+}
+
+
+<div class="row">
+    <div class="col-md-6">
+        @if (Model.Room?.Images != null && Model.Room.Images.Any())
+        {
+            <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @for (int i = 0; i < Model.Room.Images.Count; i++)
+                    {
+                        <div class="carousel-item @(i == 0 ? "active" : "")">
+                            <img src="@Model.Room.Images[i].Url" class="d-block w-100" style="height:400px; object-fit:cover;" />
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        }
+    </div>
+
+    <!-- Room info + booking -->
+    <div class="col-md-6">
+        @if (Model.Room != null)
+        {
+
+        <h2>@Model.Room.Name</h2>
+        <p>
+            @for (int i = 0; i < Model.Room.Capacity; i++)
+            {
+                <i class="fa-solid fa-user text-primary"></i>
+            }
+        </p>
+        <p>@Model.Room.Description</p>
+
+        <div class="mt-3">
+            <label class="fw-semibold">Room amenities</label>
+                @if (Model.Room.RoomAmenities != null && Model.Room.RoomAmenities.Any())
+                {
+                    <div class="d-flex flex-wrap gap-3 mt-2">
+                        @foreach (var amenity in Model.Room.RoomAmenities)
+                        {
+                            <span class="d-flex align-items-center gap-2 px-3 py-2 rounded shadow-sm bg-light">
+                                <i class="fa-solid @amenityIcons[amenity] text-primary"></i>
+                                <span>@amenity</span>
+                            </span>
+                        }
+                    </div>
+                }
+        </div>
+        <br />
+        <p class="fw-bold">Starting Price: @Model.Room.PricePerNight .mkd</p>
+
+        @if (User.Identity?.IsAuthenticated ?? false)
+        {
+            @if(Model.IsEdit)
+            {
+                    @if (!ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <div>@error.ErrorMessage</div>
+                            }
+                        </div>
+                    }
+                    <form method="post" asp-page-handler="Update">
+                        <input type="hidden" name="id" value="@Model.Room.Id" />
+
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label>Adults</label>
+                                <input asp-for="Adults" type="number" class="form-control" min="1" max="@Model.Room.Capacity" />
+                            </div>
+                            <div class="col">
+                                <label>Children</label>
+                                <input asp-for="Children" type="number" class="form-control" min="0" max="@Model.Room.Capacity" />
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label>Additional Services</label>
+                            <select asp-for="AdditionalServices" class="form-select" multiple>
+                                @foreach (var service in Enum.GetValues(typeof(AdditionalService)))
+                                {
+                                    <option value="@service">@service   +200mkd.</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">
+                                <label>From Date</label>
+                                <input asp-for="FromDate"
+                                       type="date"
+                                       class="form-control"
+                                       id="fromDate"
+                                       value="@(Model.FromDate.ToLocalTime().ToString("yyyy-MM-dd"))" />
+                                <small class="text-danger d-none" id="fromError">
+                                    This date is already booked.
+                                </small>
+                            </div>
+                            <div class="col">
+                                <label>To Date</label>
+                                <input asp-for="ToDate"
+                                       type="date"
+                                       class="form-control"
+                                       id="toDate"
+                                       value="@(Model.ToDate.ToLocalTime().ToString("yyyy-MM-dd"))" />
+                                <small class="text-danger d-none" id="toError">
+                                    Selected range overlaps booked dates.
+                                </small>
+                            </div>
+                        </div>
+                        @if (!Model.CanLeaveReview)
+                        {
+                            <button type="submit" class="btn btn-success w-100">
+                                @(Model.IsEdit ? "Update Reservation" : "Book Now")
+                        </button>
+                        }
+                    </form>
+            }
+            else
+            {
+                    @if (!ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <div>@error.ErrorMessage</div>
+                            }
+                        </div>
+                    }
+                <form method="post" asp-page-handler="Book">
+                    <input type="hidden" name="id" value="@Model.Room.Id" />
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label>Adults</label>
+                                <input asp-for="Adults" type="number" class="form-control" min="1" max="@Model.Room.Capacity" />
+                        </div>
+                        <div class="col">
+                            <label>Children</label>
+                                <input asp-for="Children" type="number" class="form-control" min="0" max="@Model.Room.Capacity" />
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label>Additional Services</label>
+                        <select asp-for="AdditionalServices" class="form-select" multiple>
+                            @foreach (var service in Enum.GetValues(typeof(AdditionalService)))
+                            {
+                                <option value="@service">@service   +200mkd.</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label>From Date</label>
+                            <input asp-for="FromDate"
+                                    type="date"
+                                    class="form-control"
+                                    id="fromDate"
+                                    value="@(Model.FromDate.ToLocalTime().ToString("yyyy-MM-dd"))" />
+                                <small class="text-danger d-none" id="fromError">
+                                    This date is already booked.
+                                </small>
+                        </div>
+                        <div class="col">
+                            <label>To Date</label>
+                            <input asp-for="ToDate"
+                                    type="date"
+                                    class="form-control"
+                                    id="toDate"
+                                    value="@(Model.ToDate.ToLocalTime().ToString("yyyy-MM-dd"))" />
+                                <small class="text-danger d-none" id="toError">
+                                    Selected range overlaps booked dates.
+                                </small>
+                        </div>
+                    </div>
+                        @if (!Model.CanLeaveReview)
+                        {
+                            <button type="submit" class="btn btn-success w-100">
+                                @(Model.IsEdit ? "Update Reservation" : "Book Now")
+                            </button>
+                        }
+                </form>
+            }
+        }
+        else
+        {
+
+            var returnUrl = PageContext.HttpContext.Request.Path + PageContext.HttpContext.Request.QueryString;
+
+            <a asp-page="/Account/Login" asp-route-returnUrl="@returnUrl" class="btn btn-primary">
+                Login to book
+            </a>
+        }
+        } else {
+            <p>Room not found.</p>
+        }
+    </div>
+</div>
+
+@if (Model.CanLeaveReview)
+{
+    <div class="card mb-4 p-3">
+        <h4>Leave a Review</h4>
+        <form method="post" asp-page-handler="AddReview">
+            <input type="hidden" name="RoomId" value="@Model.Room.Id" />
+
+            <div class="mb-2">
+                <label>Rating</label>
+                <select asp-for="NewReviewRate" class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="mb-2">
+                <label>Description</label>
+                <textarea asp-for="NewReviewDescription" class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    </div>
+}
+
+<hr />
+
+<h3>Reviews</h3>
+
+@if (Model.Reviews.Any())
+{
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        @foreach (var review in Model.Reviews)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="review-display" id="display-@review.Id">
+                            <p>@review.Customer.Name @review.Customer.LastName</p>
+                            <p class="fw-bold">
+                                @for (int i = 0; i < review.Rate; i++)
+                                {
+                                    <span class="text-warning">★</span>
+                                }
+                                @for (int i = review.Rate; i < 5; i++)
+                                {
+                                    <span class="text-muted">★</span>
+                                }
+                            </p>
+                            <p>@review.Description</p>
+
+                            @if (User.Identity?.IsAuthenticated == true
+                                                && Model.Customer != null
+                                                && review.CustomerId == Model.Customer.Id)
+                            {
+                                <button type="button"
+                                        class="btn btn-sm btn-outline-warning"
+                                        onclick="toggleEdit(@review.Id)">
+                                    Edit
+                                </button>
+                            }
+                        </div>
+
+                        <div class="review-edit d-none" id="edit-@review.Id">
+          
+                            <form method="post" asp-page-handler="AddOrUpdateReview">
+                                <input type="hidden" name="RoomId" value="@Model.Room.Id" />
+                                        <input type="hidden" name="EditReviewId" value="@review.Id" />
+                                @* @if(Model.EditReviewId.HasValue)
+                                {
+                                    <input type="hidden" name="EditReviewId" value="@review.Id" />
+                                } *@
+
+                                <div class="mb-2">
+                                    <label>Rating</label>
+                                        <select asp-for="NewReviewRate" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label>Description</label>
+                                        <textarea name="NewReviewDescription" class="form-control">@review.Description</textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    @(Model.EditReviewId.HasValue ? "Update Review" : "Submit Review")
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>No reviews yet.</p>
+}
+
+
+@section Scripts {
+    <script>
+        const bookedDates = @Html.Raw(
+                Newtonsoft.Json.JsonConvert.SerializeObject(
+                        Model.BookedDates.Select(d => d.ToString("yyyy-MM-dd"))
+                )
+        );
+    </script>
+
+    <script>
+        const fromDate = document.getElementById('fromDate');
+        const toDate = document.getElementById('toDate');
+        const fromError = document.getElementById('fromError');
+        const toError = document.getElementById('toError');
+        const submitBtn = document.querySelector('button[type="submit"]');
+
+        function resetErrors() {
+            fromError.classList.add('d-none');
+            toError.classList.add('d-none');
+            fromDate.classList.remove('is-invalid');
+            toDate.classList.remove('is-invalid');
+            submitBtn.disabled = false;
+        }
+
+        function hasBookedInRange(from, to) {
+            return bookedDates.some(d => d >= from && d <= to);
+        }
+
+        fromDate.addEventListener('change', () => {
+            resetErrors();
+            const fromVal = fromDate.value;
+            toDate.min = fromVal;
+
+            if (bookedDates.includes(fromVal)) {
+                fromError.classList.remove('d-none');
+                fromDate.classList.add('is-invalid');
+                submitBtn.disabled = true;
+            }
+        });
+
+        toDate.addEventListener('change', () => {
+            resetErrors();
+            const fromVal = fromDate.value;
+            const toVal = toDate.value;
+
+            if (!fromVal || !toVal) return;
+
+            if (hasBookedInRange(fromVal, toVal)) {
+                toError.classList.remove('d-none');
+                toDate.classList.add('is-invalid');
+                submitBtn.disabled = true;
+            }
+        });
+    </script>
+
+
+
+    <script>
+        function toggleEdit(reviewId) {
+            const displayDiv = document.getElementById(`display-${reviewId}`);
+            const editDiv = document.getElementById(`edit-${reviewId}`);
+            displayDiv.classList.toggle('d-none');
+            editDiv.classList.toggle('d-none');
+        }
+    </script>
+
+    <script>
+        const adultsInput = document.getElementById('Adults');
+        const childrenInput = document.getElementById('Children');
+        const capacity = @Model.Room.Capacity;
+
+        adultsInput.addEventListener('input', () => {
+            const adults = parseInt(adultsInput.value) || 0;
+            childrenInput.max = Math.max(0, capacity - adults);
+        });
+    </script>
+}
+

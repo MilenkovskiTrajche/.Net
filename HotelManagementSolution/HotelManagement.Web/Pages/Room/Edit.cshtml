@@ -1,0 +1,72 @@
+﻿@page
+@using HotelManagement.Domain.Enums
+@model HotelManagement.Web.Pages.Room.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Room</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Room.Id" />
+            <div class="form-group">
+                <label asp-for="Room.Name" class="control-label"></label>
+                <input asp-for="Room.Name" class="form-control" />
+                <span asp-validation-for="Room.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Room.Description" class="control-label"></label>
+                <input asp-for="Room.Description" class="form-control" />
+                <span asp-validation-for="Room.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Room.PricePerNight" class="control-label"></label>
+                <input asp-for="Room.PricePerNight" class="form-control" />
+                <span asp-validation-for="Room.PricePerNight" class="text-danger"></span>
+            </div>
+            <div class="mb-2">
+                <label>Room Amenities</label>
+                <select asp-for="RoomAmenities" class="form-select" multiple>
+                    @foreach (var service in Enum.GetValues(typeof(RoomAmenities)))
+                    {
+                        <option value="@service">@service</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Upload New Images</label>
+                <input type="file" asp-for="UploadImages" multiple class="form-control"/>
+            </div>
+
+            <h4>Current Images</h4>
+            @if (Model.Room.Images != null && Model.Room.Images.Count > 0)
+            {
+                <div class="row">
+                    @foreach (var img in Model.Room.Images)
+                    {
+                        <div class="col-3 mb-2">
+                            <img src="@Url.Content(img.Url)" class="img-fluid" />
+                        </div>
+                    }
+                </div>
+            }
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
